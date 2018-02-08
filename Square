@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Kvadratas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Iveskite a");
+            int a = int.Parse(Console.ReadLine());
+        }
+        {Console.WriteLine("Iveskite b");
+        int b = int.Parse(Console.ReadLine());
+    }
+
+    {Console.WriteLine("Kvadratas");
+        }
+        for (int i = 0; i < a; i++)
+            {
+            for (int j = 0; j < b; j++)
+            {
+         int sum = i + j;
+         if (sum % 2 == 0)
+          {
+         Console.Write("a");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+ 
+                }
+                Console.WriteLine(");
+            }
+ 
+            Console.ReadLine();
+ 
+        }
+    }
+}
