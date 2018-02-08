@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Svilpikodiena
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 0;
+            while (i < 2)
+            {
+                i++;
+                System.Console.WriteLine("kartojama kol teisingas");
+                bool isIttrue = false;
+            }
+           
+
+            System.Console.ReadLine();
+             
+        }
+    
+    }
+}
