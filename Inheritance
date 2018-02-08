@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritence
+{
+    class Animal
+    {
+        public virtual string Speak()
+        {
+            return "";
+        }
+    }
+    class Pet:Animal
+    {
+        public string Name;
+     
+    }
+    class Cat : Pet
+    {
+        public override string Speak ()
+        {
+            return $"{Name} : MIAU";
+        }
+   
+    }
+    class Dog : Pet
+    {
+    public override string Speak()
+    {
+        return $"{Name} : AU AU";
+    }
+}
+    class Fish :Pet
+    {
+
+    }
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cat cat = new Cat();
+            Dog dog = new Dog();
+            cat.Name = "Riuka";//nes pavelde lauka (name) is klases//
+            Console.WriteLine(cat.Speak());
+            dog.Name = "Pifas";
+        Console.WriteLine(dog.Speak());
+            PrintAnimals(new Animal[] { cat, dog });
+            System.Console.ReadLine();
+        }
+        public static void PrintAnimals(Animal[] animals)
+        {
+            foreach(Animal a in animals)
+            {
+                Console.WriteLine(a.Speak());
+            }
+        }
+    }
+}
