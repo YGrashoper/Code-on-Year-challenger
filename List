@@ -1,0 +1,73 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ForEach
+{
+    class Question
+    {
+        public string Klausimas = "";
+        public string AtsakymoVariantai = "";
+    }
+
+    class Answer
+    {
+        public string Atsakymas = "";
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+            Question z = new Question();
+
+            Question klausimasPirmas = new Question();
+            klausimasPirmas.Klausimas = "Kada riukos gimtadienis";
+            klausimasPirmas.AtsakymoVariantai = "\n a. Vasari \n b. Kova \n c. Rugseji";
+
+
+            Question klausimasAntras = new Question();
+            klausimasAntras.Klausimas = "Kada Pauliaus vardadienis";
+
+            Question klausimasTrecias = new Question();
+            klausimasTrecias.Klausimas = "Kas yra Lietuvos prezidentas";
+
+            Question klausimasKetvirtas = new Question();
+            klausimasKetvirtas.Klausimas = "Kada ivyko Zalgirio musis";
+
+            //int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
+
+
+            //int suma = 0;
+
+
+
+            //List<int> skaiciai = new List<int>();
+            //{
+
+            //    skaiciai.Add(0);
+            //    skaiciai.Add(1);
+            //    skaiciai.Add(2);
+            //    skaiciai.Add(3);
+            //    skaiciai.Add(4);
+            //    skaiciai.Add(5);
+            //    skaiciai.Add(6);
+            //    foreach (int sk in skaiciai)
+            //    {
+
+
+            //        Console.WriteLine(sk + " ");
+            //        suma += sk;
+            //    }
+
+            //}
+
+            //Console.WriteLine($"suma2: {suma}");
+
+            System.Console.WriteLine(z);
+            System.Console.ReadLine();
+        }
+    }
+}
