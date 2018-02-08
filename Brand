@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Negative
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+              Pograma nuskaito is konsoles viena skaiciu, 
+              Programa atsako ar skaicius yra tarp 8 ir 18
+            */
+            Console.WriteLine("koks brendas");
+            string brand = Console.ReadLine();//
+            Console.WriteLine("kokia kaina");
+            int price= int.Parse(Console.ReadLine());
+            brand = brand.ToUpper();
+            bool isitPrada = brand == "P" || brand == "p";
+         
+            bool isitVersace = brand == "V"|| brand == "v";
+            
+            bool isitDolce = brand == "D" || brand == "d";
+
+            bool isitPradaPrice = 100 < price && price < 200;
+            bool isitVersacePrice = price > 300;
+            bool isitDolcePrice = 0< price && price < 20;
+
+            bool canIbuy = (isitPrada && isitPradaPrice) || (isitVersace && isitVersacePrice) || (isitDolce && isitDolcePrice);
+            Console.WriteLine($"Ar galiu pirkti? {canIbuy}");  
+            Console.ReadLine();
+        }
+    }
+}
+
