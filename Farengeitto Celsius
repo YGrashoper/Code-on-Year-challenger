@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Farengeit 
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Iveskite laipsnius Farengeitais");
+        int farh = int.Parse(Console.ReadLine());
+        Console.WriteLine();
+        float FtoC = (farh - 32) * 5f / 9;
+        Console.WriteLine($"Celsius laipsniu yra {Math.Round(FtoC, 2)}");
+        Console.ReadLine();
+    }
+}
+}
