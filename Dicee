@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dicee
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("how many dicee scoreee will you use");
+            Console.WriteLine("how many dicee will you drop");
+            int rnd1 = Convert.ToInt32(Console.Readline);
+            int rnd2 = Convert.ToInt32(Console.ReadLine);
+            rnd1* rnd2;
+            Console.WriteLine("result is " + rnd2 * rnd1);
+            Console.ReadLine;
+
+        }
+    }
+}
