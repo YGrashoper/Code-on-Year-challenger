@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace baksas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int selected = 50;
+            Console.WriteLine($"Pasirinkta ({selected})");
+            string text = Console.ReadLine();
+            Console.WriteLine($"Jus ivedete {text}, kurio ilgis {text.Length}");
+            Console.WriteLine("Skaicius A:");
+            Console.WriteLine("Skaicius B:");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine(a == b);
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
