@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+namespace Dictionaries
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<string, string> t = new Dictionary<string, string>();
+            t.Add("hello", "Labas");
+            t.Add("programming", "programavimas");
+
+            System.Console.WriteLine($"{t["hello"]}");//raktas yra zodis hello//
+            System.Console.WriteLine($"{t.Count}");
+            System.Console.WriteLine($"{t.ContainsKey("programming")}");//jeigu gauname true-reikia zodyne yra sitas raktas, jei false-tai nera//
+            System.Console.ReadLine();
+            Dictionary<int, string> n = new Dictionary<int, string>();
+            n.Add(1, "A");
+            n.Add(100, "ABB");
+            System.Console.WriteLine($"{n[100]}");//raktas yra skaicius 100//
+            System.Console.WriteLine($"{n.Count}");
+            System.Console.WriteLine($"{n.ContainsKey(1)}");
+            System.Console.ReadLine();
+
+            Stack<string> s = new Stack<string>();//first in, last out//
+            Queue<int> eile = new Queue<int>();//first in ,first start//
+            
+        }
+    }
+}
