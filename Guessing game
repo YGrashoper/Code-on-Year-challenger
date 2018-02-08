@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Guessinggame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while inputnumb count <5 { 
+            int inputNumb = Convert.ToInt32(Console.ReadLine);
+            if inputNumb = rnd New int
+                    {
+                    Console.WriteLine("you won!");
+                }
+            else{
+                    Console.WriteLine("you lost hah ahahaahah!");
+                }
+            }
+        }
+    }
+}
