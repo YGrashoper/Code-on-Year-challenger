@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Interfacecat
+{
+    class Sofa:IScratchable
+    {
+        public void FeelScratch()
+        {
+            Console.WriteLine("TIK ne Sofa,Nedraskyk!");
+        }
+    }
+    class Human:IScratchable
+    {
+        public void FeelScratch()
+        {
+            Console.WriteLine("AAAAAAA!");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Cat riuka = new Cat();
+            Human me = new Human();
+            riuka.Scratch(me);
+            System.Console.ReadLine();
+        }
+    }
+}
