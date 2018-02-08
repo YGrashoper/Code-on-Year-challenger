@@ -1,0 +1,120 @@
+using System;
+using System.Runtime.InteropServices;
+using PirmaApplikacija;
+
+namespace Scopes
+{
+    class IdCodesDatabase
+    {
+        private static int idTop = 0;
+
+        private static string[] idCodesTable = new string[100];
+
+        public static void Insert(string idCode)
+        {
+
+            idCodesTable[idTop] = idCode;
+            idTop++;
+        }
+
+        public static void Delete(string idCode)
+        {
+            for (int i = 0; i < idCodesTable.Length; i++)
+            {
+                string candidate = idCodesTable[i];
+                if (candidate == idCode)
+                {
+                    idCodesTable[i] = "";
+                }
+            }
+        }
+
+        public static bool Contains(string idCode)
+        {
+            for (int i = 0; i < idCodesTable.Length; i++)
+            {
+                string candidate = idCodesTable[i];
+                if (candidate == idCode)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    class Program
+    {
+        static void NewCodeEnter()
+        {
+            Console.WriteLine("Iveskite Asmens Koda:");
+            string ID = Console.ReadLine();
+            IdCodesDatabase.Insert(ID);
+            Console.WriteLine("Sekmingai issaugota duomenu bazeje");
+        }
+
+        static void DeleteCode()
+        {
+            Console.WriteLine("Iveskite Asmens Koda:");
+            string ID = Console.ReadLine();
+            IdCodesDatabase.Delete(ID);
+            Console.WriteLine("Sekmingai pasalinta is duomenu bazes");
+        }
+
+        static void ExistingCodeCheck()
+        {
+            Console.WriteLine("Iveskite Asmens Koda:");
+            string ID = Console.ReadLine();
+            bool IDExists = IdCodesDatabase.Contains(ID);
+
+            if (IDExists)
+            {
+                Console.WriteLine("Toks kodas yra");
+            }
+            else
+            {
+                Console.WriteLine("Tokio kodo nera");
+            }
+        }
+        static void Main(string[] args)
+        {
+            // turi turėti meniu ir išvardintos komandos kurias reikia atlikti
+            // 1 įvesti naują kodą
+            // 2 patikrinti ar asmens kodas yra
+            // 3 ištrinti kodą
+            // 4 išeiti iš programos
+
+            Console.WriteLine("meniu");
+            Console.WriteLine("1 įvesti naują kodą");
+            Console.WriteLine("2 patikrinti ar asmens kodas yra");
+            Console.WriteLine("3 ištrinti kodą");
+            Console.WriteLine("4 išeiti iš programos");
+
+            while (true)
+            {
+
+                string a = Console.ReadLine();
+                if (a == "1")
+                {
+                    NewCodeEnter();
+                }
+                if (a == "2")
+                {
+                    ExistingCodeCheck();
+                }
+                if (a == "3")
+                {
+                    DeleteCode();
+                }
+                if (a == "4")
+                {
+                    break;
+                }
+            }
+
+            //Tests.TestCase1();
+            //Tests.TestCase2();
+            //Console.ReadLine();
+        }
+    }
+}
