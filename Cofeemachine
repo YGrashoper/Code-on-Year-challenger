@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Coffeemachine
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+        public static void Cofeemachine()
+        {
+            Console.WriteLine("Hello,, my dear user");
+            Console.WriteLine("Which size of our extraodrinary coffee you would like to choose ? ");
+            Console.WriteLine("Please, insert money into machine");
+     public enum CoffeeSize
+        {
+            SMALL ,
+            MEDIUM ,
+            BIG ,
+        }
+        public enum CoffeePrice
+        {
+            SMALL = 1,
+            MEDIUM = 3,
+            BIG = 5, 
+        }
+
+
+
+        public enum float CoffeeAmount
+        {
+            SMALL = 0.5,
+            MEDIUM = 0.75,
+            BIG = 1
+        }
+        public enum WaterAmount
+        {
+           SMALL =0.25,
+           MEDIUM = 0,5,
+           BIG = 0,75,
+
+
+        }
+        
+            for (CofeeAmountLeft <= 31  && int TotalWater <= 51){ 
+            int TotalCofee = 31;
+            int TotalWater = 51;
+             CofeeAmountLeft =  TotalCoffee -  CofeeAmount[];
+                return  CofeeAmountLeft;
+             WaterAmountLeft =  TotalWater -  WaterAmount[];
+                return WaterAmountLeft;
+            
+            
+            if ()
+            {
+                Console.WriteLine("");
+            }
+            }
+            Console.WriteLine("CoffeMachine is empty");
+            Console.ReadLine();
+
+
+        }
+    }
+}
+
+
+            
